@@ -17,6 +17,9 @@
 		555A4E59295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E58295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift */; };
 		555A4E66295BCF8800206734 /* CardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E65295BCF8800206734 /* CardSelectionViewController.swift */; };
 		555A4E682960CD3000206734 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E672960CD3000206734 /* Deck.swift */; };
+		555A4E6A296299E000206734 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E69296299E000206734 /* Card.swift */; };
+		555A4E6C29629D8B00206734 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E6B29629D8B00206734 /* Suit.swift */; };
+		555A4E6F29633D3F00206734 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E6E29633D3F00206734 /* Workout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		555A4E58295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorkoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		555A4E65295BCF8800206734 /* CardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionViewController.swift; sourceTree = "<group>"; };
 		555A4E672960CD3000206734 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		555A4E69296299E000206734 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		555A4E6B29629D8B00206734 /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
+		555A4E6E29633D3F00206734 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		555A4E34295BCDA600206734 /* CardWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				555A4E6D2962A4F300206734 /* Models */,
 				555A4E35295BCDA600206734 /* AppDelegate.swift */,
 				555A4E37295BCDA600206734 /* SceneDelegate.swift */,
 				555A4E65295BCF8800206734 /* CardSelectionViewController.swift */,
@@ -108,7 +115,6 @@
 				555A4E3E295BCDA800206734 /* Assets.xcassets */,
 				555A4E40295BCDA800206734 /* LaunchScreen.storyboard */,
 				555A4E43295BCDA800206734 /* Info.plist */,
-				555A4E672960CD3000206734 /* Deck.swift */,
 			);
 			path = CardWorkout;
 			sourceTree = "<group>";
@@ -128,6 +134,17 @@
 				555A4E58295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift */,
 			);
 			path = CardWorkoutUITests;
+			sourceTree = "<group>";
+		};
+		555A4E6D2962A4F300206734 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				555A4E672960CD3000206734 /* Deck.swift */,
+				555A4E69296299E000206734 /* Card.swift */,
+				555A4E6B29629D8B00206734 /* Suit.swift */,
+				555A4E6E29633D3F00206734 /* Workout.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555A4E6C29629D8B00206734 /* Suit.swift in Sources */,
 				555A4E682960CD3000206734 /* Deck.swift in Sources */,
+				555A4E6F29633D3F00206734 /* Workout.swift in Sources */,
 				555A4E36295BCDA600206734 /* AppDelegate.swift in Sources */,
+				555A4E6A296299E000206734 /* Card.swift in Sources */,
 				555A4E38295BCDA600206734 /* SceneDelegate.swift in Sources */,
 				555A4E66295BCF8800206734 /* CardSelectionViewController.swift in Sources */,
 			);

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -74,6 +73,12 @@
                                     <segue destination="bmt-8Q-Kc0" kind="presentation" id="SCH-Qs-ngZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Push-ups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mw4-f4-JRv">
+                                <rect key="frame" x="148.66666666666666" y="544" width="95.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,10 +86,13 @@
                             <constraint firstItem="rf5-mx-Ddp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1vG-3S-zRN"/>
                             <constraint firstItem="rf5-mx-Ddp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ng-cC-EaP"/>
                             <constraint firstItem="W01-Di-B0d" firstAttribute="top" secondItem="rf5-mx-Ddp" secondAttribute="bottom" constant="20" id="BvN-8U-q8N"/>
+                            <constraint firstItem="mw4-f4-JRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLg-dy-f8I"/>
                             <constraint firstItem="W01-Di-B0d" firstAttribute="leading" secondItem="rf5-mx-Ddp" secondAttribute="leading" id="HQW-Lp-F1h"/>
+                            <constraint firstItem="rf5-mx-Ddp" firstAttribute="top" secondItem="mw4-f4-JRv" secondAttribute="bottom" constant="21" id="LWD-fL-Hqu"/>
                             <constraint firstItem="IeW-Ya-muC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YWK-b6-eSl"/>
                             <constraint firstItem="rf5-mx-Ddp" firstAttribute="top" secondItem="IeW-Ya-muC" secondAttribute="bottom" constant="60" id="Z72-uE-t5Z"/>
                             <constraint firstItem="IeW-Ya-muC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="eaw-WN-hZV"/>
+                            <constraint firstItem="mw4-f4-JRv" firstAttribute="top" secondItem="IeW-Ya-muC" secondAttribute="bottom" constant="18" id="goC-J2-D5I"/>
                             <constraint firstItem="8Xi-EB-JN6" firstAttribute="trailing" secondItem="rf5-mx-Ddp" secondAttribute="trailing" id="hAt-uX-qX1"/>
                             <constraint firstItem="rf5-mx-Ddp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hRc-ml-0oh"/>
                             <constraint firstItem="8Xi-EB-JN6" firstAttribute="centerY" secondItem="W01-Di-B0d" secondAttribute="centerY" id="mr3-p2-vQl"/>
@@ -92,6 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="IeW-Ya-muC" id="0P4-SH-XOh"/>
+                        <outlet property="exerciseLabel" destination="mw4-f4-JRv" id="kpW-LX-p8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,11 +127,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-up  ♥️ = Crunches  ♣️ = Squats  ♦️ = Calf-Raises" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neZ-oi-Wk0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neZ-oi-Wk0">
                                 <rect key="frame" x="96.666666666666686" y="472.00000000000006" width="200" height="175.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="kZU-im-zzb"/>
                                 </constraints>
+                                <string key="text">♠️ = Push-ups  
+♥️ = Crunches  ♣️ = Squats  ♦️ = Calf-Raises</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

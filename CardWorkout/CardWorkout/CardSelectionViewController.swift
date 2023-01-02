@@ -10,11 +10,12 @@ import UIKit
 class CardSelectionViewController: UIViewController {
 
     @IBOutlet var cardImageView: UIImageView!
+    @IBOutlet var exerciseLabel: UILabel!
     
-    var cards : [UIImage] = Deck.allCards
+    var cards : [Card] = Deck.allCards
     
     var timer: Timer!
-     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
@@ -31,7 +32,9 @@ class CardSelectionViewController: UIViewController {
     }
     
     @objc func showRandomImage(){
-        cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
+        let randomCard = cards.randomElement() ?? Card(rank: "A", suit: Suit.Spade)
+        exerciseLabel.text = Workout.determine(from : randomCard)
+        cardImageView.image = randomCard.image ?? UIImage(named: "AS")
     }
 
     @IBAction func stopButtonTapped(_ sender: UIButton) {
@@ -42,5 +45,7 @@ class CardSelectionViewController: UIViewController {
         timer.invalidate()
         startTimer()
     }
+    
+    
     
 }
