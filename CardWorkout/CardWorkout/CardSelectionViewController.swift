@@ -12,9 +12,9 @@ class CardSelectionViewController: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var exerciseLabel: UILabel!
     
-    var cards : [Card] = Deck.allCards
+    private let cards : [Card] = Deck.allCards
     
-    var timer: Timer!
+    private var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()

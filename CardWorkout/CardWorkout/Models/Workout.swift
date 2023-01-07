@@ -19,8 +19,6 @@ struct Workout {
             return determineReps(from : card) + " Push-Ups"
         case .Heart:
             return determineReps(from : card) + " Crunches"
-        default:
-            return "??"
             
         }
     }

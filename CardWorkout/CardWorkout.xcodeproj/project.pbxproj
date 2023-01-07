@@ -12,7 +12,6 @@
 		555A4E3D295BCDA600206734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555A4E3B295BCDA600206734 /* Main.storyboard */; };
 		555A4E3F295BCDA800206734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555A4E3E295BCDA800206734 /* Assets.xcassets */; };
 		555A4E42295BCDA800206734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555A4E40295BCDA800206734 /* LaunchScreen.storyboard */; };
-		555A4E4D295BCDA800206734 /* CardWorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E4C295BCDA800206734 /* CardWorkoutTests.swift */; };
 		555A4E57295BCDA800206734 /* CardWorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E56295BCDA800206734 /* CardWorkoutUITests.swift */; };
 		555A4E59295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E58295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift */; };
 		555A4E66295BCF8800206734 /* CardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E65295BCF8800206734 /* CardSelectionViewController.swift */; };
@@ -20,6 +19,7 @@
 		555A4E6A296299E000206734 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E69296299E000206734 /* Card.swift */; };
 		555A4E6C29629D8B00206734 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E6B29629D8B00206734 /* Suit.swift */; };
 		555A4E6F29633D3F00206734 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E6E29633D3F00206734 /* Workout.swift */; };
+		555A4E71296A17DF00206734 /* WorkoutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A4E70296A17DF00206734 /* WorkoutTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		555A4E41295BCDA800206734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		555A4E43295BCDA800206734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555A4E48295BCDA800206734 /* CardWorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardWorkoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		555A4E4C295BCDA800206734 /* CardWorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorkoutTests.swift; sourceTree = "<group>"; };
 		555A4E52295BCDA800206734 /* CardWorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardWorkoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555A4E56295BCDA800206734 /* CardWorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorkoutUITests.swift; sourceTree = "<group>"; };
 		555A4E58295BCDA800206734 /* CardWorkoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorkoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		555A4E69296299E000206734 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		555A4E6B29629D8B00206734 /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		555A4E6E29633D3F00206734 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		555A4E70296A17DF00206734 /* WorkoutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 		555A4E4B295BCDA800206734 /* CardWorkoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				555A4E4C295BCDA800206734 /* CardWorkoutTests.swift */,
+				555A4E70296A17DF00206734 /* WorkoutTest.swift */,
 			);
 			path = CardWorkoutTests;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555A4E4D295BCDA800206734 /* CardWorkoutTests.swift in Sources */,
+				555A4E71296A17DF00206734 /* WorkoutTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
